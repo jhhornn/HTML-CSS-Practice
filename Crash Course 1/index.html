@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 2021 Frontend Developer Crash Course</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Remember<span>That</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="https://img.icons8.com/material-outlined/32/000000/menu--v4.png" alt="Open Navigation" />
+
+            <nav>
+
+                <img id="mobile-exit" class="mobile-menu-exit" src="https://img.icons8.com/external-neu-royyan-wijaya/32/000000/external-cancel-neu-interface-neu-royyan-wijaya-3.png" alt="Close Navigation" />
+                <ul class=" primary-nav ">
+                    <li class="current "><a href="# ">Home</a></li>
+                    <li><a href="# ">Features</a></li>
+                    <li><a href="# ">Pricing</a></li>
+                </ul>
+
+                <ul class="secondary-nav ">
+                    <li><a href="# ">Contact</a></li>
+                    <li class="go-premium-cta "><a href="# ">Go Premium</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class=" hero ">
+        <div class="container ">
+            <div class="left-col ">
+                <p class="subhead ">It's Nitty &amp; Gritty</p>
+                <h1>A Task App That Doesn't Stink</h1>
+                <div class="hero-cta ">
+                    <a href=" # " class="primary-cta ">Try for free</a>
+                    <a href=" # " class="watch-video-cta">
+                        <img src="https://img.icons8.com/material-rounded/32/000000/video-call.png " alt="watch a video" />Watch a video
+                    </a>
+                </div>
+            </div>
+            <img src="https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/1000/000000/external-smartphone-home-office-vitaliy-gorbachev-flat-vitaly-gorbachev-1.png" class="hero-img" alt="illustration" />
+
+        </div>
+    </section>
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Unlimited Tasks</li>
+                <li>SMS: Task Reminders</li>
+                <li>Confetti Explosions upon Task Completions</li>
+                <li>Social Media Announcements</li>
+                <li>Real Time Collaboration</li>
+                <li>Other awesome features</li>
+            </ul>
+
+            <img src="images.jpg" alt="Man holding phone">
+        </div>
+    </section>
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="face1.jpg" alt="Person1">
+                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse libero aliquid cumque reprehenderit facilis atque tempora porro. Facilis, voluptate nostrum!</blockquote>
+                    <cite>-Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="face2.jpg" alt="Person2">
+                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse libero aliquid cumque reprehenderit facilis atque tempora porro. Facilis, voluptate nostrum!</blockquote>
+                    <cite>-Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="face3.jpg" alt="Person3">
+                    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse libero aliquid cumque reprehenderit facilis atque tempora porro. Facilis, voluptate nostrum!</blockquote>
+                    <cite>-Jane Doe</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder=" Your email ">
+
+                    <label for="message ">Message</label>
+                    <textarea name="message " id="message " cols="30 " rows="10 "></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send message">
+                </form>
+            </div>
+
+            <div class="container-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63288.45501125216!2d4.491132123682635!3d7.517191211872908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1038309277025e0f%3A0xb3764916592ce82b!2sObafemi%20Awolowo%20University!5e0!3m2!1sen!2sng!4v1642518528636!5m2!1sen!2sng"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta');
+        const nav = document.querySelector('nav');
+        const mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn')
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn')
+        })
+    </script>
+</body>
+
+</html>
